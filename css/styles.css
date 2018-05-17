@@ -10,6 +10,9 @@ h1 {
 	font-weight: normal;
 }
 
+body {
+	background-image: url("../img/tagmaybe.png") repeat;
+}
 
 body, html{
 	height:100%;
