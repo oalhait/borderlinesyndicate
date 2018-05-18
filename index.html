@@ -5,28 +5,24 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/spinner.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-	<script src="js/countdown.js"></script>
-
+	<script type="text/javascript" src="js/glitch.js"></script>
+	<script type="text/javascript" src="js/load.js"></script>
 </head>
-<body>
-	<section class="loading bg">
-		<div class="centered">
-			<!-- <h1 id="loading-title">borderline</h1> -->
-			<div class="spinner"></div>
-		</div>
-	</section>
-<!-- 	<section class="loaded bg">
-		<video autoplay loop muted id="bgvid">
-			<source src="img/pulpfiction.mp4" type="video/mp4">
-		</video>	
-	</section>
- -->	<!-- <div class="bg">
-		<div class="countdown">
-			<hr id="demo" style="border:0">
 
+<body>
+	<section class="loading" id="loadingsection">
+		<div class="centered bg">
+			<div class="spinner centered"></div>
 		</div>
-	</div>
- -->
+	</section>
+
+	<section class="loaded bg" id="mainsection">
+		<div class="centered">
+			<video autoplay loop muted id="bgvid" onload="switchToMain()" class="centered hidden">
+				<source src="img/pulpfiction.mp4" type="video/mp4">
+			</video>	
+		</div>
+	</section>
+
 </body>
 </html>
