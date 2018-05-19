@@ -10,8 +10,10 @@
 // }
 
 
-$("#mainsection").load(function() {
-	$("#loadingsection").addClass("hidden");
-	$(this).addClass("visible");
-	$(this).removeClass("hidden");
+$("#mainsection").ready(function() {
+	setTimeout(function() {
+		$("#loadingsection").addClass("hidden");
+		$("#mainsection").removeClass("hidden");
+		$("#mainsection").addClass("visible");
+	}, 1000);
 });
