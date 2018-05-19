@@ -9,11 +9,13 @@
 // 	document.getElementById('bgvid').addClass("fadeIn");
 // }
 
-
-$("#mainsection").ready(function() {
-	setTimeout(function() {
-		$("#loadingsection").addClass("hidden");
-		$("#mainsection").removeClass("hidden");
-		$("#mainsection").addClass("visible");
-	}, 1000);
-});
+$(document).ready(function() {
+	$("#mainsection").ready(function() {
+		setTimeout(function() {
+			$("#loadingsection").addClass("hidden");
+			$("#mainsection").removeClass("hidden");
+			$("#mainsection").addClass("visible");
+		}, 1000);
+	});
+})
+	
