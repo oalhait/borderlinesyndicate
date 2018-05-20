@@ -72,11 +72,20 @@ section {
 	top:50%;
 	left:50%;
 	transform: translate(-50%,-50%);
+	align-content: center;
+	text-align: center;
 }
 
 .spinner {
 	position: absolute;
 	margin-top: 30vh;
+}
+
+.title {
+	max-width:50%;
+	margin: auto;
+	-webkit-filter: invert(1);
+	filter: invert(1);
 }
 
 @-webkit-keyframes fadeOut {
