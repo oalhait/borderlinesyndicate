@@ -1,0 +1,20 @@
+@font-face {
+	font-family: AndadaSC-Italic;
+	src: url(font/AndadaSC-Italic.otf);
+}
+
+h1 {
+	font-family: AndadaSC-Italic;
+	font-style: italic;
+	font-size: 64px;
+	font-weight: normal;
+}
+
+
+#container{
+	width: 70%;
+}
+
+img{
+	box-shadow: 10px 10px 5px grey;
+}
