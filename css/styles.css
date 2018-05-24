@@ -1,13 +1,33 @@
 @font-face {
-	font-family: AndadaSC-Italic;
-	src: url(font/AndadaSC-Italic.otf);
+	font-family: Malle;
+	src: url(../font/malle.ttf);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+li {
+	font: 30px Malle;
+	color:white;
+	display:inline-block;
+	float:center;
+	padding: 5%;
+}
+.content {
+	align-content: center;
+}
+.navbar {
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 h1 {
-	font-family: AndadaSC-Italic;
-	font-style: italic;
+	font-family: Malle;
 	font-size: 44px;
-	font-weight: normal;
     color: rgb(253,227,84);
 }
 
