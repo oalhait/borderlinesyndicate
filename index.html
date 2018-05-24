@@ -8,20 +8,29 @@
 
 	<link rel="stylesheet" type="text/css" href="css/spinner.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
+	<script type="text/javascript" src="js/glitch.js"></script>
+	<script type="text/javascript" src="js/load.js"></script>
 
 </head>
+
 <body>
 
 
-		<section id="container" class="loading bg flash">
-		<div class="centered">
-			<!-- <h1 id="loading-title">borderline</h1> -->
-			<div class="spinner"></div>
+	<section class="loaded bg hidden" id="mainsection">
+		<div class="overlay">
+			<video playsinline autoplay loop muted id="bgvid" class="centered">
+				<source src="img/pulpfiction.mp4" type="video/mp4">
+			</video>
+			<div class="centered">
+				<img src="img/BRDLINE.png" class="title">
+			</div>
 		</div>
-
 	</section>
-	
+
+
+	<div class="container">
+		
+	</div>
 
 </body>
 </html>

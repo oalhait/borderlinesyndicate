@@ -6,40 +6,33 @@
 h1 {
 	font-family: AndadaSC-Italic;
 	font-style: italic;
-	font-size: 64px;
+	font-size: 44px;
 	font-weight: normal;
+    color: rgb(253,227,84);
 }
 
-
-body, html{
+body, html {
+	background-color: black;
 	height:100%;
 	margin:0;
 }
 
-.bg {
+section {
 	height:100%;
-	top:0;
-	bottom: 0;
-	background-image: url("../img/tagmaybe.png") ;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	overflow: hidden;
+	width:100%;
+	position: absolute;
+}
+
+.bg {
+	height: 100%;
+	width:100%;
+	background: url("../img/tagmaybe.png") no-repeat center;
+	background-size: contain;
 	align-content: center;
 }
 
-.countdown {
-	width: 100%;
-	color: white;
-    /* Add a font */
-    font-family: "Courier New", Courier, monospace;
-    text-align: center;
-    font-size: 86px;
-    position:absolute;
-}
-
 .loaded video{
-	min-width: 100%;
+	/*min-width: 100%;*/
 	min-height: 100%;
 
 	width:auto;
@@ -49,12 +42,29 @@ body, html{
 	top:50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-
 }
 
-#loading-title {
-	color: rgb(253,227,84);
-	padding-bottom: 10vh;
+.hidden {
+	z-index: -10;
+	display: none;
+	animation: 1s fadeOut;
+	-webkit-animation: 1s fadeOut;
+}
+
+.visible {
+	z-index: 1;
+	display: block;
+	animation: 1s fadeIn;
+	-webkit-animation: 1s fadeIn;
+}
+
+.overlay {
+	/*shit tweakingggggggggggggggggg*/
+	width: 100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 4;
+	position: absolute;
 }
 
 .centered {
@@ -62,6 +72,8 @@ body, html{
 	top:50%;
 	left:50%;
 	transform: translate(-50%,-50%);
+	align-content: center;
+	text-align: center;
 }
 
 .spinner {
@@ -69,16 +81,42 @@ body, html{
 	margin-top: 30vh;
 }
 
-@-webkit-keyframes flash {
- 0%,2%,4%, { opacity: 1; }
- 1%,3% { opacity: 0; }
+.title {
+	max-width:50%;
+	margin: auto;
+	-webkit-filter: invert(1);
+	filter: invert(1);
 }
-@keyframes flash {
- 0%,2%,4% { opacity: 1; }
- 1%,3% { opacity: 0; }
+
+@-webkit-keyframes fadeOut {
+	from {opacity:1;}
+	to {opacity:0;}
 }
-.flash{
- opacity: 1;
- -webkit-animation: flash 4s infinite;
- animation: flash 4s infinite;
+
+@keyframes fadeOut {
+	from {opacity:1;}
+	to {opacity:0;}
+}
+
+@-webkit-keyframes fadeIn {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@keyframes fadeIn {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+
+#container{
+	width: 70%;
+}
+
+#shirts{
+	box-shadow: 10px 10px 5px grey;
+}
+
+h1{
+	color: white;
 }

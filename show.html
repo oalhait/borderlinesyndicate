@@ -2,24 +2,38 @@
 <html>
 <head>
 	<title>in the || middle</title>
-	<link rel="stylesheet" type="text/css" href="css/shop.css">
 
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
+
+	<!-- JAVASCRIPT -->
 	<script src="js/countdown.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/load.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div id="nav">
-			
+
+
+	<section class="loaded bg hidden" id="mainsection">
+		<div class="overlay">
+			<video playsinline autoplay loop muted id="bgvid" class="centered">
+				<source src="img/pulpfiction.mp4" type="video/mp4">
+			</video>
 		</div>
 
-		<div id="shop" class="center"> 
-			<img src="img/brdrpic1.jpg" height="400" width="400">
+		
+	</section>
+
+	
+	<div id="shop" class="center"> 
+				<img src="img/brdrpic1.jpg" height="400" width="400">
+			</div>	
 			
-		</div>
-	</div>
+		
 
 </body>
 </html>
