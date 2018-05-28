@@ -19,3 +19,14 @@ img{
 	box-shadow: 10px 10px 5px grey;
 }
 
+#shirt-img{
+	margin-top: 50px;
+}
+
+
+h3 {
+	font-family: AndadaSC-Italic;
+	font-style: italic;
+	font-size: 64px;
+	font-weight: normal;
+}

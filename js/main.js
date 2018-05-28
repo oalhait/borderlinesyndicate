@@ -9,3 +9,9 @@
 $("#container").fadeIn( "slow", function() {
     
   });
+
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+    $('select').formSelect();
+  });
