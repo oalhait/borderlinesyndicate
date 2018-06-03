@@ -3,86 +3,94 @@
 <head>
 	<title>in the || middle</title>
 	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/glitch.css">
+
 
 	<script src="js/materialize.min.js"></script>
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 </head>
 <body>
 
-	<!-- Background shet -->
-	<!-- <section class="loaded bg hidden" id="mainsection">
-		<div class="overlay">
-			<video playsinline autoplay loop muted id="bgvid" class="centered">
-				<source src="img/pulpfiction.mp4" type="video/mp4">
-			</video>
+	<div class="background">
+		<video playsinline autoplay loop muted id="bgvid" class="centered">
+			<source src="img/pulpfiction.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="row" id="row">
+		<div class="col s3"></div>
+		<div class="col s6 center-content">
+			<h3> I DUNNO</h3>
+			<div class="content">
+				<ul class="navbar">
+					<li><a href="#" \
+						class="glitch" \
+						data-text="HOME">HOME</a>
+					</li>
+					<li>
+						<a href="show.html" \
+						class="glitch" \
+						data-text="GALLERY">GALLERY</a>
+					</li>
+					<li>
+						<a href="#" \
+						class="glitch" \
+						data-text="ABOUT">ABOUT</a>
+					</li>
+				</ul>
+			</div>
+
+			<img id="shirt-img" src="img/brdrpic2.jpg" height="500" width="500">
+
+
+
+			<br>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+				  <!-- Identify your business so that you can collect the payments. -->
+				  <input type="hidden" name="business" value="herschelgomez@xyzzyu.com">
+
+				  <!-- Specify a Buy Now button. -->
+				  <input type="hidden" name="cmd" value="_xclick">
+
+				  <!-- Specify details about the item that buyers will purchase. -->
+				  <!-- Ask ZAIRE -->
+				  <input type="hidden" name="item_name" value="Hot Sauce-12 oz. Bottle">
+				  <input type="hidden" name="amount" value="5.95">
+				  <input type="hidden" name="currency_code" value="USD">
+
+				  <!-- Provide the buyer with a text box option field. -->
+				  <div class="input-field">
+					  <h6>What size are you? (S, M, L, XL) </h6>
+					  <input type="text" name="os0" maxlength="5"> <br />
+
+					<!--   Not working -->
+					  <!-- <select>
+					      <option value="" disabled selected>Choose your size</option>
+					      <option value="1">S</option>
+					      <option value="2">M</option>
+					      <option value="3">L</option>
+					      <option value="3">XL</option>
+					      <option value="3">XXL</option>
+					  </select> -->
+
+				  <!-- Display the payment button. -->
+				  <br>
+				  <br>
+				  <br>
+
+				  <!-- CHANGE TO BETTER IMAGE SHET UGGLY RN -->
+
+
+				  <input type="button" name="submit" class="waves-effect waves-light btn-small grey darken-4 white-text"  id="buy" 
+				    value= "Buy Now" alt="Buy Now">
+				
+			</form>
 		</div>
-		<div id="shop" class="center"> 
-				<img src="img/brdrpic1.jpg" height="400" width="400">
-			</div>	
-			
-	</section> -->
-	<div class="container">
-<div class="row" id="row">
-			<div class="col 7">
-				<img id="shirt-img" src="img/brdrpic2.jpg" height="500" width="500">
-			</div>
 
-			<div class="col 1">
-			</div>
-
-			<div class="col 4 center">
-				<h3 class="center"> I DUNNO</h3>
-				<br>
-				<br>
-				<br>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-					  <!-- Identify your business so that you can collect the payments. -->
-					  <input type="hidden" name="business" value="herschelgomez@xyzzyu.com">
-
-					  <!-- Specify a Buy Now button. -->
-					  <input type="hidden" name="cmd" value="_xclick">
-
-					  <!-- Specify details about the item that buyers will purchase. -->
-					  <!-- Ask ZAIRE -->
-					  <input type="hidden" name="item_name" value="Hot Sauce-12 oz. Bottle">
-					  <input type="hidden" name="amount" value="5.95">
-					  <input type="hidden" name="currency_code" value="USD">
-
-					  <!-- Provide the buyer with a text box option field. -->
-					  <div class="input-field">
-						  <h6>What size are you? (S, M, L, XL) </h6>
-						  <input type="text" name="os0" maxlength="5"> <br />
-
-						<!--   Not working -->
-						  <!-- <select>
-						      <option value="" disabled selected>Choose your size</option>
-						      <option value="1">S</option>
-						      <option value="2">M</option>
-						      <option value="3">L</option>
-						      <option value="3">XL</option>
-						      <option value="3">XXL</option>
-						  </select> -->
-
-					  <!-- Display the payment button. -->
-					  <br>
-					  <br>
-					  <br>
-
-					  <!-- CHANGE TO BETTER IMAGE SHET UGGLY RN -->
-
-
-					  <input type="button" name="submit" class="waves-effect waves-light btn-small grey darken-4 white-text"  id="buy" 
-					    value= "Buy Now" alt="Buy Now">
-					
-					</form>
-
-			</div>
-		</div>
-
-
-		
+		<div class="col s3"></div>
 	</div>
 
 </body>

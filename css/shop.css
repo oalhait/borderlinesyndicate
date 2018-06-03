@@ -8,9 +8,21 @@
 	src: url(../font/malle.ttf);
 }
 
+body {
+	background-color: black;
+}
+
 a {
 	text-decoration: none;
-	color: white;
+	color: white !important;
+}
+
+li {
+	font: 30px Malle;
+	color:white;
+	display:inline-block;
+	float:center;
+	padding: 5%;
 }
 
 h1 {
@@ -26,7 +38,7 @@ h1 {
 }
 
 img{
-	box-shadow: 10px 10px 5px transparent;
+	border: 3px solid white;
 }
 
 #shirt-img{
@@ -105,3 +117,11 @@ select{
 	text-align: center;
 
 }
+
+.navbar {
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
