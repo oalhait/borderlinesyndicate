@@ -8,8 +8,13 @@
 
 
 	<script src="js/countdown.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/materialize.min.js"></script>
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+   	
+   	<script src="js/main.js"></script>
+
+
 </head>
 <body>
 
@@ -42,15 +47,29 @@
 
 				<!-- Specify details about the item that buyers will purchase. -->
 				<!-- Ask ZAIRE -->
-				<input type="hidden" name="item_name" value="Hot Sauce-12 oz. Bottle">
-				<input type="hidden" name="amount" value="5.95">
+				<input type="hidden" name="item_name" value="BoysNoGood">
+				<input type="hidden" name="amount" value="35">
 				<input type="hidden" name="currency_code" value="USD">
 
-				<!-- Provide the buyer with a text box option field. -->
-				<div class="input-field">
-					<h6>What size are you? (S, M, L, XL) </h6>
-					<input type="text" name="os0" maxlength="5"> <br />
+				<h4 id="shop-text" value="Type">$35</h6>
+					
+				<h4 id="shop-text" value="Type">Sizes:</h6>
 
+		
+				  	<select name="os0" class="center grey darken-4">
+					    <option id="select-box" value="Select Type"> <b>Select Size</b> </option>
+					    <option value="Small">Small</option>
+					    <option value="Medium">Medium</option>
+					    <option value="Large">Large</option>
+					    <option value="X-Large">X-Large</option>
+					  </select>
+				   <br />
+				    <br />
+					
+
+	
+
+				
 				<!--   Not working -->
 					<!-- <select>
 					    <option value="" disabled selected>Choose your size</option>
@@ -65,8 +84,9 @@
 				<br>
 
 				<!-- CHANGE TO BETTER IMAGE SHET UGGLY RN -->
-				<input id="buy-now" type="button" value="Buy Now" class="waves-effect waves-light btn transparent" name="submit" border="0"
-				    alt="Buy Now">
+				
+				    <button class="btn waves-effect waves-light transparent" type="submit" id="buy-now" name="action" alt="PayPal - The safer, easier way to pay online!">Buy Now </button>
+
 			</form>
 		</div>
 		<div class="col s3"></div>

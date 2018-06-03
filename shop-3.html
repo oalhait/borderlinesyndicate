@@ -3,90 +3,96 @@
 <head>
 	<title>in the || middle</title>
 	<link rel="stylesheet" type="text/css" href="css/shop.css">
+	<link rel="stylesheet" type="text/css" href="css/button.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
 	<script src="js/countdown.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+   	
+   	<script src="js/main.js"></script>
+
+
 </head>
 <body>
 
 	<!-- Background shet -->
-	<!-- <section class="loaded bg hidden" id="mainsection">
-		<div class="overlay">
-			<video playsinline autoplay loop muted id="bgvid" class="centered">
-				<source src="img/pulpfiction.mp4" type="video/mp4">
-			</video>
-		</div>
-		<div id="shop" class="center"> 
-				<img src="img/brdrpic1.jpg" height="400" width="400">
-			</div>	
+	<div class="background">
+		<video playsinline autoplay loop muted id="bgvid" class="centered">
+			<source src="img/pulpfiction.mp4" type="video/mp4">
+		</video>
+	</div>
+	<!-- <div id="shop" class="center"> 
+			<img src="img/brdrpic1.jpg" height="400" width="400">
+	</div> -->	
 			
-	</section> -->
 
-	<div class="container">
+	<div class="row fit-inpage" id="row">
+		<div class="col s3"></div>
+		<div class="col s6 center-content">
+			<h3 class="center"> Borderline Syndicate</h3>
+			<img id="shirt-img" class="" src="img/hoodiemock.jpg" height="500" width="500">
 
-		<div class="row" id="row">
-			<div class="col 7">
-				<img id="shirt-img" src="img/HOODIEMOCK.jpg" height="500" width="500">
-			</div>
+			<br>
 
-			<div class="col 1">
-			</div>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 
-			<div class="col 4 center">
-				<h3 class="center"> LOL IDK</h3>
-				<br>
-				<br>
-				<br>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+				<!-- Identify your business so that you can collect the payments. -->
+				<input type="hidden" name="business" value="herschelgomez@xyzzyu.com">
 
-					  <!-- Identify your business so that you can collect the payments. -->
-					  <input type="hidden" name="business" value="herschelgomez@xyzzyu.com">
+				<!-- Specify a Buy Now button. -->
+				<input type="hidden" name="cmd" value="_xclick">
 
-					  <!-- Specify a Buy Now button. -->
-					  <input type="hidden" name="cmd" value="_xclick">
+				<!-- Specify details about the item that buyers will purchase. -->
+				<!-- Ask ZAIRE -->
+				<input type="hidden" name="item_name" value="BoysNoGood">
+				<input type="hidden" name="amount" value="35">
+				<input type="hidden" name="currency_code" value="USD">
 
-					  <!-- Specify details about the item that buyers will purchase. -->
-					  <!-- Ask ZAIRE -->
-					  <input type="hidden" name="item_name" value="Hot Sauce-12 oz. Bottle">
-					  <input type="hidden" name="amount" value="5.95">
-					  <input type="hidden" name="currency_code" value="USD">
-
-					  <!-- Provide the buyer with a text box option field. -->
-					  <div class="input-field">
-						  <h6>What size are you? (S, M, L, XL) </h6>
-						  <input type="text" name="os0" maxlength="5"> <br />
-
-						<!--   Not working -->
-						  <!-- <select>
-						      <option value="" disabled selected>Choose your size</option>
-						      <option value="1">S</option>
-						      <option value="2">M</option>
-						      <option value="3">L</option>
-						      <option value="3">XL</option>
-						      <option value="3">XXL</option>
-						  </select> -->
-
-					  <!-- Display the payment button. -->
-					  <br>
-					  <br>
-					  <br>
-
-					  <!-- CHANGE TO BETTER IMAGE SHET UGGLY RN -->
-					  <input type="image" name="submit" border="0"
-					    src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"
-					    alt="Buy Now">
+				<h4 id="shop-text" value="Type">$35</h6>
 					
-					</form>
-
-			</div>
-		</div>
-
+				<h4 id="shop-text" value="Type">Sizes:</h6>
 
 		
+				  	<select name="os0" class="center grey darken-4">
+					    <option id="select-box" value="Select Type"> <b>Select Size</b> </option>
+					    <option value="Small">Small</option>
+					    <option value="Medium">Medium</option>
+					    <option value="Large">Large</option>
+					    <option value="X-Large">X-Large</option>
+					  </select>
+				   <br />
+				    <br />
+					
+
+	
+
+				
+				<!--   Not working -->
+					<!-- <select>
+					    <option value="" disabled selected>Choose your size</option>
+					    <option value="1">S</option>
+					    <option value="2">M</option>
+					    <option value="3">L</option>
+					    <option value="3">XL</option>
+					    <option value="3">XXL</option>
+					</select> -->
+
+				<!-- Display the payment button. -->
+				<br>
+
+				<!-- CHANGE TO BETTER IMAGE SHET UGGLY RN -->
+				
+				    <button class="btn waves-effect waves-light transparent" type="submit" id="buy-now" name="action" alt="PayPal - The safer, easier way to pay online!">Buy Now </button>
+
+			</form>
+		</div>
+		<div class="col s3"></div>
 	</div>
+		
+	<!-- </div> -->
 
 </body>
 </html>
