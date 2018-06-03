@@ -3,6 +3,16 @@
 	src: url(font/AndadaSC-Italic.otf);
 }
 
+@font-face {
+	font-family: Malle;
+	src: url(../font/malle.ttf);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
 h1 {
 	font-family: AndadaSC-Italic;
 	font-style: italic;
@@ -20,13 +30,37 @@ img{
 }
 
 #shirt-img{
-	margin-top: 50px;
+	display: block;
+	margin: auto;
 }
 
 
 h3 {
-	font-family: AndadaSC-Italic;
-	font-style: italic;
+	font-family: Malle;
 	font-size: 64px;
 	font-weight: normal;
+	color:white;
+}
+
+.center-content {
+	align-items: center;
+	margin: auto;
+	text-align: center;
+}
+
+.fit-inpage {
+	height:100vh;
+}
+
+.background {
+	height:100%;
+	width:100%;
+	/*display: block;*/
+	position: fixed;
+	z-index: -10;
+	background-attachment: fixed;
+}
+
+#bgvid {
+	min-height: 100%;
 }
