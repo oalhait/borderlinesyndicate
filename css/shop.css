@@ -132,3 +132,7 @@ select {
 	display: block;
 	margin: auto;
 }
+
+.small-margin {
+	margin: 0 !important;
+}
