@@ -101,7 +101,7 @@ h3 {
 }
 
 
-select{
+select {
 	font-family: Malle;
 	text-align: center;
 	color: white;
@@ -120,7 +120,15 @@ select{
 .navbar {
 	text-align: center;
 	list-style-type: none;
+	white-space: nowrap;
 	margin: 0;
 	padding: 0;
 }
 
+.thumbnail {
+	max-width: 30%;
+	z-index: 100;
+	position: absolute;
+	display: block;
+	margin: auto;
+}
