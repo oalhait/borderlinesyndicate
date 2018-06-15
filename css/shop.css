@@ -8,9 +8,21 @@
 	src: url(../font/malle.ttf);
 }
 
+body {
+	background-color: black;
+}
+
 a {
 	text-decoration: none;
-	color: white;
+	color: white !important;
+}
+
+li {
+	font: 30px Malle;
+	color:white;
+	display:inline-block;
+	float:center;
+	padding: 5%;
 }
 
 h1 {
@@ -26,7 +38,7 @@ h1 {
 }
 
 img{
-	box-shadow: 10px 10px 5px transparent;
+	/*border: 3px solid white;*/
 }
 
 #shirt-img{
@@ -60,7 +72,6 @@ h3 {
 	z-index: -10;
 	background-attachment: fixed;
 	background-size: cover;
-	/*background-position: center;*/
 }
 
 #bgvid {
@@ -90,7 +101,7 @@ h3 {
 }
 
 
-select{
+select {
 	font-family: Malle;
 	text-align: center;
 	color: white;
@@ -104,4 +115,20 @@ select{
 	align-content: center;
 	text-align: center;
 
+}
+
+.navbar {
+	text-align: center;
+	list-style-type: none;
+	white-space: nowrap;
+	margin: 0;
+	padding: 0;
+}
+
+.thumbnail {
+	max-width: 30%;
+	z-index: 100;
+	position: absolute;
+	display: block;
+	margin: auto;
 }
