@@ -126,7 +126,7 @@ select {
 }
 
 .thumbnail {
-	max-width: 30%;
+	width: 30%;
 	z-index: 100;
 	position: absolute;
 	display: block;
