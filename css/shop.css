@@ -25,6 +25,11 @@ li {
 	padding: 5%;
 }
 
+.pic {
+	text-align: center;
+	font: 40px Malle;
+}
+
 h1 {
 	font-family: AndadaSC-Italic;
 	font-style: italic;
@@ -126,9 +131,9 @@ select {
 }
 
 .thumbnail {
-	width: 30%;
+	width: 70%;
 	z-index: 100;
-	position: absolute;
+	position: relative;
 	display: block;
 	margin: auto;
 }
