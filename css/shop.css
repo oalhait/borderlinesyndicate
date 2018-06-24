@@ -134,3 +134,7 @@ select {
 }
 
 
+.small-margin {
+	margin: 0 !important;
+}
+
